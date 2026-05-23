@@ -25,7 +25,8 @@ class Solution:
         while len(heap) > 0:
             # print(heap)
             price, node, stops = heapq.heappop(heap)
-            
+            if stops > min_stops[node]:
+                continue
             min_stops[node] = min(stops, min_stops[node])
             # print("Node:" + str(price) + ", " + str(node) + ", " + str(stops))
             # print(min_stops)
