@@ -38,9 +38,6 @@ class Solution:
         while count < newEndnum:
             current = current.next
             count += 1
-        
-
-        print(current.val)
 
         oldHead = head
         head = current.next
