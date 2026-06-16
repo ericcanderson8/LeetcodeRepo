@@ -6,9 +6,9 @@ class Solution:
                 if len(output) > 0:
                     output.pop()
             elif c == '#':
-                output = list(output) + list(output)
+                output.extend(output)
             elif c == '%':
-                output = output[::-1]
+                output.reverse()
             else:
                 output.append(c)
         
