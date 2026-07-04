@@ -12,7 +12,6 @@ class Solution:
         for i in nums:
             prefix.append(i + prefix[-1])
         
-        print(f"Prefix:{prefix}")
         output = len(nums) + 1
         q = deque()
         for i in range(len(prefix)):
