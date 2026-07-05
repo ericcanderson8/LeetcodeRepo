@@ -12,7 +12,6 @@ class Solution:
         while l <= r:
             # always move the smaller one forward before the larger one. 
             minLR = min(maxL, maxR)
-            print(f"L:{l}; R:{r}")
             if maxR < maxL: 
                 newR = height[r]
                 if newR < minLR:
