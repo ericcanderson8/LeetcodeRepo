@@ -16,7 +16,6 @@ class Solution:
                 newR = height[r]
                 if newR < minLR:
                     count += minLR - newR
-                    print(minLR - newR)
                 if maxR < newR:
                     maxR = newR
                 r -= 1
@@ -24,7 +23,6 @@ class Solution:
                 newL = height[l]
                 if newL < minLR:
                     count += minLR - newL
-                    print(minLR - newL)
                 if maxL < newL:
                     maxL = newL
                 l += 1
