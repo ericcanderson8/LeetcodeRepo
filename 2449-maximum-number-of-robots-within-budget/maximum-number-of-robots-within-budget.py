@@ -19,7 +19,6 @@ class Solution:
                 while qmCharge and qmCharge[-1] == l:
                     qmCharge.pop()
                 l += 1
-            print(i, l)
             output = max(output, i-l+1)
 
         return output
