@@ -68,7 +68,6 @@ class Solution:
                 output2 = largestN(nums2, i)
 
                 combined = merge(output1, output2)
-                print(combined)
                 output = max(output, combined)
 
             
