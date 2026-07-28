@@ -16,7 +16,6 @@ class Solution:
         if odd:
             oddAdd = s[len(s)//2]
         output = output + oddAdd + output[::-1]
-        print(string)
         
             
         return output
