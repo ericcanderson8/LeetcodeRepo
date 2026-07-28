@@ -4,8 +4,6 @@ class Solution:
 
         if len(s) == 0 or len(s) == 1:
             return s
-        
-        print(odd)
 
         string = list(s[:len(s)//2])
         string.sort()
@@ -16,7 +14,5 @@ class Solution:
         if odd:
             oddAdd = s[len(s)//2]
         output = output + oddAdd + output[::-1]
-        
-            
         return output
         
