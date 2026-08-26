@@ -12,13 +12,10 @@ class Solution:
                 ones += 1
             
             if ones == k:
-                print(q)
                 curString = "".join(q)
                 if output == "":
                     output = curString
                 else:
-                    print(output)
-                    print(curString)
                     output = str(min(int(output), int(curString)))
 
                 q.popleft()
