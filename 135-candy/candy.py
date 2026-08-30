@@ -9,7 +9,6 @@ class Solution:
             if ratings[i] > ratings[i+1]:
                 candies[i] = max(candies[i+1] + 1, candies[i])
         
-        print(candies)
         return sum(candies)
 
 
