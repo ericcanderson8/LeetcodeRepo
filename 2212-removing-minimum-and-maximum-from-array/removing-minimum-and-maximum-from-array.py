@@ -7,19 +7,8 @@ class Solution:
         if len(nums) == 1:
             return 1
 
-        maximum = -(10 ** 5) -1. 
-        minimum = 10 ** 5 + 1
-        maxIndex = -1
-        minIndex = -1
-
-        for i in range(len(nums)):
-            num = nums[i]
-            if num > maximum:
-                maximum = num
-                maxIndex = i
-            if num < minimum:
-                minimum = num
-                minIndex = i
+        minIndex = nums.index(min(nums))
+        maxIndex = nums.index(max(nums))
         
         
         output = len(nums)
