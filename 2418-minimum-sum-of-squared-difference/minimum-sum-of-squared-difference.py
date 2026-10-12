@@ -10,7 +10,6 @@ class Solution:
         if k >= sum(diffs):
             return 0
         
-        print(diffs)
 
         for i in range(SIZE):
             w = i + 1
