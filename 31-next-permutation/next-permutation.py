@@ -11,8 +11,6 @@ class Solution:
         for i in range(len(nums)-2, -1, -1):
             if nums[i] < nums[i+1]:
                 pivot = nums[i]
-                print(f"pivot:{pivot}")
-                print(f"i:{i}")
                 for j in range(len(nums)-1, -1, -1):
                     if nums[j] > pivot:
                         nums[i], nums[j] = nums[j], nums[i]
